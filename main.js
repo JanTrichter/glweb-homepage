@@ -3,15 +3,49 @@ const contentDiv = document.querySelector('#contents');
 
 // Component Section
 const home = `
+<h2 class="product-heading">Products</h2>
 <section class="content">
     <div class="product">
-        <img src="src/Mangos.jpg" alt="a funny ad">
+        <img class="product-image" src="src/Mangos.jpg" alt="some red juice">
         <div class="product-text">
             <div class="product-title">
-                A nice Drink <br> 6,90€
+                A nice Drink <br> 6.90$
             </div>
             <div class="product-description">
                 <p>It is a really nice drink. trust me I'm an engineer</p>
+            </div>  
+        </div>
+    </div>
+    <div class="product">
+        <img class="product-image" src="src/orange.jpg" alt="orange juice">
+        <div class="product-text">
+            <div class="product-title">
+                A cheap Drink <br> 4.20$
+            </div>
+            <div class="product-description">
+                <p>It is a really cheap drink. trust me I'm a bartender </p>
+            </div>  
+        </div>
+    </div>
+    <div class="product">
+        <img class="product-image" src="src/normal.jpg" alt="cucumber salad juice">
+        <div class="product-text">
+            <div class="product-title">
+                A wtf Drink <br> 5.00$
+            </div>
+            <div class="product-description">
+                <p>Why would you drink that? seriously? </p>
+            </div>  
+        </div>
+    </div>
+    <div class="product">
+        <img class="product-image" src="src/red.jpg" alt="normal juice">
+        <div class="product-text">
+            <div class="product-title">
+                The normal juice <br> 5.55$
+            </div>
+            <div class="product-description">
+                <p>Looks actually great. Just 5.55$! </p>
             </div>  
         </div>
     </div>
