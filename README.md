@@ -1,6 +1,8 @@
 # GLWebP-Homepage
 Fertige Webseite für GLWebP mit Javascript Routing (SPA Routing).
 
+Die Website ist weder responsive noch funktionieren alle Seiten. Die Website dient nur zur Demonstration.
+
 ### > Klonen oder runterladen 
 
 Mit der IDE runterladen:
