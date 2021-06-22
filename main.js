@@ -190,9 +190,16 @@ if(localStorage.getItem('isNew')){
     isNew = true;
     localStorage.setItem('isNew', JSON.stringify(isNew));
     alert(`
-        Platform: ${navigator.platform} \n
-        Date: ${new Date()} \n
+        Platform: ${navigator.platform}
+        Date: ${new Date()}
         Math Stuff: ${Math.sqrt(9) - Math.sqrt(16) * Math.floor(3.2 * 7.4)}
+        window: Width: ${window.innerWidth} Height: ${window.innerHeight}
+        Center: X: ${(window.innerWidth / 2)} Y: ${(window.innerHeight / 2)}
         I am Scatman 🎩  
     `);
 }
+
+// chase the cursor
+// let body = document.querySelector('body').addEventListener('mouseover', (event) => {
+//     console.log('x: ' + event.clientX + ', y: ' + event.clientY);
+// })
