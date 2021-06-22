@@ -16,7 +16,7 @@ const home = `
             </div>  
         </div>
     </div>
-    <div class="product">
+    <div class="product" onclick="navigate('/yellowJuice'); return false">
         <img class="product-image" src="src/orange.jpg" alt="orange juice">
         <div class="product-text">
             <div class="product-title">
@@ -27,7 +27,7 @@ const home = `
             </div>  
         </div>
     </div>
-    <div class="product">
+    <div class="product" onclick="navigate('/greenJuice'); return false">
         <img class="product-image" src="src/normal.jpg" alt="cucumber salad juice">
         <div class="product-text">
             <div class="product-title">
@@ -38,7 +38,7 @@ const home = `
             </div>  
         </div>
     </div>
-    <div class="product">
+    <div class="product" onclick="navigate('/darkredJuice'); return false">
         <img class="product-image" src="src/red.jpg" alt="normal juice">
         <div class="product-text">
             <div class="product-title">
@@ -101,6 +101,52 @@ const redJuice = `
 </section>
 `;
 
+const yellowJuice = `
+<section class="content juice-pages">
+    <h2>Yellow Juice</h2>
+    <div class="contact">
+        <img class="product-image main-image" src="src/orange.jpg" alt="some yellow juice">
+        <dl>
+            <dt>Ingredients</dt>
+            <dd>200ml orange 🍊</dd>
+            <dd>100ml water 💧</dd>
+            <dd>100ml mango juice 🥭</dd>
+            <dd>100ml politicians spit 🕴</dd>
+        </dl>
+    </div>
+</section>
+`;
+
+const greenJuice = `
+<section class="content juice-pages">
+    <h2>Green Juice</h2>
+    <div class="contact">
+        <img class="product-image main-image" src="src/normal.jpg" alt="some green juice">
+        <dl>
+            <dt>Ingredients</dt>
+            <dd>200ml cucumber juice 🥒</dd>
+            <dd>200ml water 💧</dd>
+            <dd>100ml politicians spit 🕴</dd>
+        </dl>
+    </div>
+</section>
+`;
+
+const darkredJuice = `
+<section class="content juice-pages">
+    <h2>Red Juice</h2>
+    <div class="contact">
+        <img class="product-image main-image" src="src/red.jpg" alt="some darkred juice">
+        <dl>
+            <dt>Ingredients</dt>
+            <dd>200ml strawberry juice 🍓</dd>
+            <dd>200ml water 💧</dd>
+            <dd>100ml politicians spit 🕴</dd>
+        </dl>
+    </div>
+</section>
+`;
+
 // Routes Section
 const routes = {
     '/': home,
@@ -109,7 +155,10 @@ const routes = {
     '/gallery': gallery,
     '/imprint': imprint,
     '/products': home,
-    '/redJuice': redJuice
+    '/redJuice': redJuice,
+    '/yellowJuice': yellowJuice,
+    '/greenJuice': greenJuice,
+    '/darkredJuice': darkredJuice
 };
 
 // Actions
