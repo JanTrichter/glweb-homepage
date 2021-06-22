@@ -214,3 +214,6 @@ const showAlert = () => {
     I am Scatman 🎩  
 `);
 }
+
+// rick roll
+console.log('%c.', 'font-size: 10px; line-height: 200px; color: transparent;padding: 140px 220px; background: url("src/rick.webp");'); 
