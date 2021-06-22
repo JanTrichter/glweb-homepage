@@ -189,5 +189,9 @@ if(localStorage.getItem('isNew')){
 } else {
     isNew = true;
     localStorage.setItem('isNew', JSON.stringify(isNew));
-    alert('I am Scatmann \n 🎩');
+    alert(`
+        ${navigator.platform} \n
+        ${new Date().getDate()} \n
+        I am Scatman 🎩  
+    `);
 }
