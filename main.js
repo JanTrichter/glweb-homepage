@@ -179,3 +179,15 @@ const navigate = (route) => {
 window.onpopstate = () => {
     contentDiv.innerHTML = routes[window.location.pathname];
 }
+
+// Alert
+let isNew;
+
+// check and save if user has visited the page before
+if(localStorage.getItem('isNew')){
+    isNew = JSON.parse(localStorage.getItem('isNew'));
+} else {
+    isNew = true;
+    localStorage.setItem('isNew', JSON.stringify(isNew));
+    alert('I am Scatmann');
+}
