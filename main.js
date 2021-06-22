@@ -191,7 +191,7 @@ if(localStorage.getItem('isNew')){
     localStorage.setItem('isNew', JSON.stringify(isNew));
     alert(`
         ${navigator.platform} \n
-        ${new Date().getDate()} \n
+        ${new Date()} \n
         I am Scatman 🎩  
     `);
 }
