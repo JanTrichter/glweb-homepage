@@ -190,8 +190,8 @@ if(localStorage.getItem('isNew')){
     isNew = true;
     localStorage.setItem('isNew', JSON.stringify(isNew));
     alert(`
-        ${navigator.platform} \n
-        ${new Date()} \n
+        Platform: ${navigator.platform} \n
+        Date: ${new Date()} \n
         I am Scatman 🎩  
     `);
 }
