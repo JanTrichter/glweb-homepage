@@ -192,7 +192,7 @@ if(localStorage.getItem('isNew')){
     alert(`
         Platform: ${navigator.platform} \n
         Date: ${new Date()} \n
-        Math Stuff ${Math.sqrt(9) - Math.sqrt(16) * Math.floor(3.2 * 7.4)}
+        Math Stuff: ${Math.sqrt(9) - Math.sqrt(16) * Math.floor(3.2 * 7.4)}
         I am Scatman 🎩  
     `);
 }
