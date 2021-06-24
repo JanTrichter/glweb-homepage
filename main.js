@@ -214,3 +214,9 @@ const showAlert = () => {
     I am Scatman 🎩  
 `);
 }
+
+// remove element
+
+const removeElement = (event) => {
+    event.target.remove();
+}
