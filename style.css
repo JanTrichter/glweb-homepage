@@ -14,8 +14,8 @@
 
 /* Boilerplatecode für Schriftgrößen von Visual Typescale */
 html {
-    font-size: 100%; /*16px*/
-    /* font-size: 0.7cm; --- Aufgabe Nummer X - schriftgröße muss mindestens 0.7cm sein */
+    font-size: 100%; /* 16px default */
+    /* font-size: max(100%, 7mm); --- Aufgabe Nummer X - schriftgröße muss mindestens 0.7cm sein */
 } 
 
 body {
@@ -75,7 +75,6 @@ header {
 }
 
 #contents {
-    padding: 0rem 2rem;
     width: 100%;
 }
 
@@ -273,4 +272,16 @@ footer {
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+}
+
+/* Media queries  */
+
+@media (max-width: 843px) {
+    .ads {
+        display: none;
+    }
+
+    .navigation ul {
+        display: none;
+    }
 }
