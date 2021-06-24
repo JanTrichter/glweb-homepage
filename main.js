@@ -220,3 +220,33 @@ const removeElement = (event) => {
     event.target.remove();
     event.stopPropagation();
 }
+
+// swap elements
+const elementContainer = document.querySelector('.element-container');
+let toggle = false;
+
+const swapElements = () => {
+    toggle ? elementContainer.innerHTML= '<p>Swap me! 😎</p>' : elementContainer.innerHTML = '<p>Swap me again! 🤩</p>';
+    toggle = !toggle;
+}
+
+// login mit Cookies 🤢
+const login = document.querySelector('.login');
+
+const signIn = () => {
+    if (document.cookie.match(/(loggedIn=1)/i)) {
+        login.innerText = 'Login';
+        document.cookie = 'loggedIn=0;expires=123123;SameSite=None;Secure';
+    } else {
+        document.cookie = 'loggedIn=1;expires=123123;SameSite=None;Secure';
+        login.innerText = 'Log Out';
+    }
+}
+
+const checkCookie = () => {
+    if(document.cookie.match(/(loggedIn=1)/i)) {
+        login.innerText = 'Log Out';
+    } else {
+        login.innerText = 'Login';
+    }
+}

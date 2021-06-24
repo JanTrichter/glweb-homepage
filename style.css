@@ -269,3 +269,7 @@ footer {
     justify-content: space-around;
     cursor: pointer;
 }
+
+.login {
+    cursor: pointer;
+}

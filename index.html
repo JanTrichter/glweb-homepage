@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Main Page</title>
 </head>
-<body>
+<body onload="checkCookie()">
     <header>
         <div class="icon-text">
             <p>Fruitsite!</p>
@@ -23,6 +23,7 @@
                     <li><a href="#" onclick="navigate('/imprint'); return false;">Imprint</a></li>
                     <li><a href="#" onclick="navigate('/'); return false;">Products</a></li>
                     <li><a href="#" onclick="removeElement(event)">Click me😍</a></li>
+                    <li><a class="login" onclick="signIn()">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,8 +37,11 @@
             <img src="src/Gruppe.gif" alt="another ad">
         </section>
     </main>
-    <footer onclick="showAlert()">
-        Footer 🦶
+    <footer>
+        <p onclick="showAlert()">Footer 🦶</p> 
+        <div class="element-container" onclick="swapElements()">
+            <p>Swap me! 😎</p>
+        </div>
     </footer>
     <script defer src="main.js"></script>
 </body>
