@@ -216,7 +216,7 @@ const showAlert = () => {
 }
 
 // remove element
-
 const removeElement = (event) => {
     event.target.remove();
+    event.stopPropagation();
 }
