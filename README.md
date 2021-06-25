@@ -1,9 +1,14 @@
+
 # GLWebP-Homepage
 Fertige Webseite für GLWebP mit Javascript Routing (SPA Routing).
 
 Die Website ist weder responsive noch funktionieren alle Seiten. Die Website dient nur zur Demonstration.
 
-### > Klonen oder runterladen 
+### Live-Demo
+
+Es ist eine Live-Demo der Website unter **[glweb-homepage.vercel.app](https://glweb-homepage.vercel.app/)** verfügbar. Die Seite wird dauerhaft mit jedem Push aktualisiert.
+
+### > Klonen oder runterladen
 
 Mit der IDE runterladen:
 - [Anleitung für Visual Studio Code](https://docs.microsoft.com/de-de/azure/developer/javascript/how-to/with-visual-studio-code/clone-github-repository)
