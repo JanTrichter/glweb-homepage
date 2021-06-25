@@ -250,3 +250,21 @@ const checkCookie = () => {
         login.innerText = 'Login';
     }
 }
+
+// Resizing header & footer
+const header = document.querySelector('header');
+const footer = document.querySelector('footer');
+
+const scrollFunction = () => {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    header.style.fontSize = '1.8rem';
+    footer.style.fontSize = '2rem';
+  } else {
+    header.style.fontSize = '2.8rem';
+    footer.style.fontSize = '1.3rem';
+  }
+}
+
+window.onscroll = () => {
+    scrollFunction();
+}
