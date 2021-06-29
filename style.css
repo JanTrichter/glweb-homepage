@@ -293,6 +293,10 @@ footer p {
     margin: 0;
 }
 
+.logged-in {
+    color: darksalmon !important;
+}
+
 /* Media queries  */
 
 @media (max-width: 843px) {

@@ -237,17 +237,21 @@ const signIn = () => {
     if (document.cookie.match(/(loggedIn=1)/i)) {
         login.innerText = 'Login';
         document.cookie = 'loggedIn=0;expires=123123;SameSite=None;Secure';
+        login.classList.remove('logged-in');
     } else {
         document.cookie = 'loggedIn=1;expires=123123;SameSite=None;Secure';
         login.innerText = 'Log Out';
+        login.classList.add('logged-in');
     }
 }
 
 const checkCookie = () => {
     if(document.cookie.match(/(loggedIn=1)/i)) {
         login.innerText = 'Log Out';
+        login.classList.add('logged-in');
     } else {
         login.innerText = 'Login';
+        login.classList.remove('logged-in');
     }
 }
 
