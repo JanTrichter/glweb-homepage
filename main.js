@@ -147,6 +147,19 @@ const darkredJuice = `
 </section>
 `;
 
+const ajax = `
+<section class="content juice-pages">
+    <h2>AJAX Requests</h2>
+    <div class="contact">
+        <h3>Make an Ajax request to Jsonplaceholder.com</h3>
+        <input type="text">
+        <button onclick="request()">Send request</button>
+        <h4>Answer:</h4>
+        <p id="request"></p>
+    </div>
+</section>
+`
+
 // Routes Section
 const routes = {
     '/': home,
@@ -158,7 +171,8 @@ const routes = {
     '/redJuice': redJuice,
     '/yellowJuice': yellowJuice,
     '/greenJuice': greenJuice,
-    '/darkredJuice': darkredJuice
+    '/darkredJuice': darkredJuice,
+    '/ajax': ajax
 };
 
 // Actions
@@ -233,20 +247,49 @@ const swapElements = () => {
 // login mit Cookies 🤢
 const login = document.querySelector('.login');
 
+// const signIn = () => {
+//     if (document.cookie.match(/(loggedIn=1)/i)) {
+//         login.innerText = 'Login';
+//         document.cookie = 'loggedIn=0;expires=123123;SameSite=None;Secure';
+//         login.classList.remove('logged-in');
+//     } else {
+//         document.cookie = 'loggedIn=1;expires=123123;SameSite=None;Secure';
+//         login.innerText = 'Log Out';
+//         login.classList.add('logged-in');
+//     }
+// }
+
+// const checkCookie = () => {
+//     if(document.cookie.match(/(loggedIn=1)/i)) {
+//         login.innerText = 'Log Out';
+//         login.classList.add('logged-in');
+//     } else {
+//         login.innerText = 'Login';
+//         login.classList.remove('logged-in');
+//     }
+// }
+
+    // isNew = JSON.parse(localStorage.getItem('isNew'));
+    // localStorage.setItem('isNew', JSON.stringify(isNew));
+// login mit Local Storage 🥰
+let isLoggedIn;
+
 const signIn = () => {
-    if (document.cookie.match(/(loggedIn=1)/i)) {
+    if (JSON.parse(localStorage.getItem('LoggedIn')) === true) {
         login.innerText = 'Login';
-        document.cookie = 'loggedIn=0;expires=123123;SameSite=None;Secure';
+        isLoggedIn = false;
+        localStorage.setItem('LoggedIn', JSON.stringify(isLoggedIn));
         login.classList.remove('logged-in');
     } else {
-        document.cookie = 'loggedIn=1;expires=123123;SameSite=None;Secure';
+        isLoggedIn = true;
+        localStorage.setItem('LoggedIn', JSON.stringify(isLoggedIn));
         login.innerText = 'Log Out';
         login.classList.add('logged-in');
     }
 }
 
 const checkCookie = () => {
-    if(document.cookie.match(/(loggedIn=1)/i)) {
+    if(JSON.parse(localStorage.getItem('LoggedIn'))) {
         login.innerText = 'Log Out';
         login.classList.add('logged-in');
     } else {
