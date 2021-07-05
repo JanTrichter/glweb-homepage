@@ -160,6 +160,26 @@ const ajax = `
 </section>
 `
 
+const videos = `
+<section class="content" style="flex-direction: column;">
+    <h2 style="margin: 3rem 1.38rem;">Videos</h2>
+    <video controls width="640" height="480">
+        <source src="./src/SampleVideo_LD.mp4" type="video/mp4">
+        <source src="./src/SampleVideo_LD.webm" type="video/webm">
+    </video>
+</section>
+`
+
+const audio = `
+<section class="content" style="flex-direction: column;">
+    <h2 style="margin: 3rem 1.38rem;">Annoying Autoplay Audio</h2>
+    <audio controls loop autoplay>
+        <source src="./src/SampleAudio.mp3" type="audio/mp3">
+        Your browser does not support the audio element. You should uninstall it or burn your pc ;)
+    </audio> 
+</section>
+`
+
 // Routes Section
 const routes = {
     '/': home,
@@ -172,7 +192,9 @@ const routes = {
     '/yellowJuice': yellowJuice,
     '/greenJuice': greenJuice,
     '/darkredJuice': darkredJuice,
-    '/ajax': ajax
+    '/ajax': ajax,
+    '/videos': videos,
+    '/audio': audio
 };
 
 // Actions
