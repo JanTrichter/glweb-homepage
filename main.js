@@ -269,8 +269,6 @@ const login = document.querySelector('.login');
 //     }
 // }
 
-    // isNew = JSON.parse(localStorage.getItem('isNew'));
-    // localStorage.setItem('isNew', JSON.stringify(isNew));
 // login mit Local Storage 🥰
 let isLoggedIn;
 
